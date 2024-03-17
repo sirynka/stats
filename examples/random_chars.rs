@@ -7,7 +7,7 @@ fn main() {
     let timer = Instant::now();
 
     let mut rnd = rand::thread_rng();
-    let chars = (0..char_count.to_owned())
+    let _ = (0..char_count.to_owned())
         .map(|_| rnd.gen_range(1u8..127) as char)
         .collect::<String>();
 
